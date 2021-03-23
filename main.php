@@ -20,9 +20,9 @@ if (isset($_POST['name'])) {
     $gender = $_POST['gender'];
     $age = $_POST['age'];
     $email = $_POST['email'];
-    $phone = $_POST['phone'];
+    $password = $_POST['password'];
     $desc = $_POST['desc'];
-    $sql = "INSERT INTO `trip`.`trip` (`name`, `age`, `gender`, `email`, `phone`, `other`, `dt`) VALUES ('$name', '$age', '$gender', '$email', '$phone', '$desc', current_timestamp());";
+    $sql = "INSERT INTO `Trip`.`trip` (`name`, `age`, `gender`, `email`, `password`,`Date`) VALUES ('$name', '$age', '$gender', '$email', '$password', current_timestamp());";
     // echo $sql;
 
     // Execute the query
